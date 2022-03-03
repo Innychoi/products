@@ -1,0 +1,17 @@
+{
+  "name": "products",
+  "description": "producuts models",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Innychoi",
+  "license": "UNLICNESED",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3",
+    "postgres": "^1.0.2"
+  }
+}
