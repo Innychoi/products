@@ -16,6 +16,8 @@ app.get('/products/:id', controller.getProdInfo);
 app.get('/products/:id/styles', controller.getStyles);
 app.get('/products/:id/related', controller.relatedProd);
 
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`);
 });
+
+module.exports = server;

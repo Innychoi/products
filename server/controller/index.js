@@ -12,7 +12,9 @@ module.exports = {
     },
 
     getProdInfo: function (req, res) {
+
       const productId = req.params.id;
+
       db.getProdInfo(productId, (err, result) => {
         if (err) {
           res.status(404).send();

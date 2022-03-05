@@ -6,12 +6,19 @@
   "author": "Innychoi",
   "license": "UNLICNESED",
   "scripts": {
-    "start": "nodemon server/index.js"
+    "start": "nodemon server/index.js",
+    "test": "mocha server/test/test.js"
   },
   "dependencies": {
     "express": "^4.17.3",
     "nodemon": "^2.0.15",
     "pg": "^8.7.3",
     "postgres": "^1.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.1",
+    "request": "^2.88.2",
+    "supertest": "^6.2.2"
   }
 }

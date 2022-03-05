@@ -63,3 +63,9 @@ CREATE TABLE related (
 \copy photos FROM 'server/csv/photos.csv' DELIMITER ',' CSV header;
 \copy skus FROM 'server/csv/skus.csv' DELIMITER ',' CSV header;
 \copy related FROM 'server/csv/related.csv' DELIMITER ',' CSV header;
+
+CREATE INDEX ON features (product_id);
+CREATE INDEX ON photos (styleId);
+CREATE INDEX ON skus (styleId);
+CREATE INDEX ON styles (productId);
+CREATE INDEX ON related (current_product_id);
