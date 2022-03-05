@@ -23,12 +23,12 @@ CREATE TABLE features (
 -- DROP TABLE IF EXISTS `styles`;
 
 CREATE TABLE styles (
-  id INTEGER NOT NULL PRIMARY KEY,
+  style_id INTEGER NOT NULL PRIMARY KEY,
   productId INTEGER NULL DEFAULT NULL,
   name VARCHAR(100) NULL DEFAULT NULL,
   sale_price INTEGER NULL DEFAULT NULL,
   original_price INTEGER NULL DEFAULT NULL,
-  "default?" BOOLEAN NULL DEFAULT NULL
+  "default" BOOLEAN NULL DEFAULT NULL
 );
 
 -- DROP TABLE IF EXISTS `photos`;
@@ -59,7 +59,7 @@ CREATE TABLE related (
 
 \copy product FROM 'server/csv/product.csv' DELIMITER ',' CSV header;
 \copy features FROM 'server/csv/features.csv' DELIMITER ',' CSV header;
-\copy styles FROM 'server/csv/styles.csv' DELIMITER ',' null as 'null' CSV header;
+\copy styles(style_id, productId, name, sale_price, original_price, "default" ) FROM 'server/csv/styles.csv' DELIMITER ',' null as 'null' CSV header;
 \copy photos FROM 'server/csv/photos.csv' DELIMITER ',' CSV header;
 \copy skus FROM 'server/csv/skus.csv' DELIMITER ',' CSV header;
 \copy related FROM 'server/csv/related.csv' DELIMITER ',' CSV header;
