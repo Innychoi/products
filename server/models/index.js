@@ -1,12 +1,7 @@
 const { Pool, Client } = require('pg')
 // pools will use environment variables
 // for connection information
-const pool = new Pool({
-  user: 'innychoi',
-  host: 'localhost',
-  database: 'products'
-})
-
+const pool = require('./db.js');
 module.exports = {
 
   getAllProd: function(cb) {
