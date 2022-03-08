@@ -4,3 +4,5 @@ config.js
 csv
 ignore.js
 db.js
+newrelic_agent.log
+newrelic.config.js
