@@ -7,7 +7,8 @@
   "license": "UNLICNESED",
   "scripts": {
     "start": "nodemon server/index.js",
-    "test": "mocha server/test/test.js"
+    "test": "mocha server/test/test.js",
+    "init": "bash init.sh"
   },
   "dependencies": {
     "express": "^4.17.3",
