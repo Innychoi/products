@@ -37,13 +37,11 @@ module.exports = {
         cb(null, result.rows[0]['json_build_object']);
       })
       .catch((err) => {
-        console.log(err);
         cb(err);
       })
   },
 
   getStyles: function(id, cb) {
-    console.log('styles here');
     // pool
     //   .query('SELECT * FROM styles WHERE productid = $1', [id])
     //   .then((resStyle) => {
@@ -85,7 +83,6 @@ module.exports = {
       cb(null, result.rows[0]);
     })
     .catch((err) => {
-      console.log(err);
       cb(err);
     })
   },
@@ -97,7 +94,6 @@ module.exports = {
     //     cb(null, result.rows);
     //   })
     //   .catch((err) => {
-    //     console.log(err);
     //     cb(err);
     //   })
 
@@ -107,7 +103,6 @@ module.exports = {
       //   cb(null, result.rows);
       // })
       // .catch((err) => {
-      //   console.log(err);
       //   cb(err);
       // })
 
@@ -117,7 +112,6 @@ module.exports = {
         cb(null, result.rows[0].results);
       })
       .catch((err) => {
-        console.log(err);
         cb(err);
       })
   }

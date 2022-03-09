@@ -16,6 +16,9 @@ app.get('/products', controller.getAllProd);
 app.get('/products/:id', controller.getProdInfo);
 app.get('/products/:id/styles', controller.getStyles);
 app.get('/products/:id/related', controller.relatedProd);
+// app.get('/loaderio-9e9a098d04135d01f1ec85c14cc6db12', (req, res) => {
+//   res.sendStatus('loaderio-9e9a098d04135d01f1ec85c14cc6db12');
+// })
 
 const server = app.listen(PORT, () => {
   console.log(`Server listening on port: ${PORT}`);
