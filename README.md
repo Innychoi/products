@@ -1,4 +1,4 @@
-# Atlier Backend System
+# Project Atlier : Backend System
 
 This project is an API infrastructure service for the Products module of a retail e-commerce application.
 
